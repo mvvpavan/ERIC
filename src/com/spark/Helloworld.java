@@ -5,7 +5,7 @@ import java.io.StringWriter;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.eclipse.jetty.server.Server;
+
 import org.eclipse.jetty.util.RolloverFileOutputStream;
 import org.eclipse.jetty.util.log.Log;
 
@@ -36,7 +36,8 @@ public class Helloworld {
 
         System.setOut(logStream);
 
-        System.setErr(logStream);  
+        System.setErr(logStream); 
+       // port(getHerokuAssignedPort());
 
        
 
@@ -72,5 +73,6 @@ public class Helloworld {
 		//server.stop();
 
 	}
+	
 
 }
